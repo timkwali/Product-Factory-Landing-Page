@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.container {
+    height: 60vh;
+    background: black;
+}
+
+.nav-container {
+    height: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-menu {
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-menu-item {
+    cursor: pointer;
+}
+
+.nav-menu-item:last-child {
+    margin-left: 100px;
+    cursor: pointer;
+    background: #707070;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.nav-menu-item:last-child:hover {
+    opacity: 0.7;
+}
