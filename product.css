@@ -8,6 +8,21 @@ body {
     margin: auto;
     width: 1200px;
 }
+@media(min-width: 320px) {
+    .grid {
+        max-width: 300px;
+    }
+}
+@media(min-width: 375px) {
+    .grid {
+        max-width: 345px;
+    }
+}
+@media(min-width: 425px) {
+    .grid {
+        max-width: 390px;
+    }
+}
 @media(min-width: 576px) {
     .grid {
         max-width: 540px;
@@ -289,13 +304,10 @@ body {
     align-items: center;
 }
 .background {
-    color: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.3);
     width: 200px;
     height: 70px;
     font-size: 50px;
-}
-.abt-bg {
-
 }
 .abt p {
     color: black;
@@ -381,5 +393,168 @@ body {
     .exp p {
         line-height: 1.5;
         max-width: 100%;
+    }
+}
+
+
+/* Sessions section */
+.sessions {
+    background: green;
+    color: black;
+}
+.sess {
+    background: white;
+    border-radius: 10px;
+    transform: translateY(-200px);
+}
+.sess-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.sess-bg {
+    font-size: 100px;
+    font-weight: 1000;
+    display: flex;
+    justify-content: center;
+}
+.sess-header p {
+    position: absolute;
+    text-align: center;
+    top: 60px;
+    font-weight: bold;
+}
+/* Session leads */
+.session-container {
+    margin-top: 100px;
+}
+.session {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+@media(max-width: 990px) {
+    .session {
+        height: auto;
+    }
+}
+@media(max-width: 575px) {
+    .session {
+        width: 100%;
+    }
+}
+
+/* session leader information */
+.session-lead {
+    width: 150px;
+    height: 100%;
+}
+@media(max-width: 990px) {
+    .session-lead {
+        width: 80px;
+    }
+}
+.lead-header {
+    height: 40px;
+    background: #f8f8f8;
+    /* border: 1px solid black; */
+    display: flex;
+}
+.mark {
+    height: 100%;
+    width: 3%;
+    background: black;
+    border-radius: 5px;
+}
+.lead-head {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    border-radius: 5px 0px 0px 5px;
+    background: #f8f8f8;
+    font-weight: bold;
+    font-size: 15px;
+}
+.lead-images {
+    display: flex;
+}
+@media(max-width: 990px) {
+    .lead-images {
+        flex-direction: column;
+    }
+}
+.lead-image {
+    padding-top: 25px;
+    height: 50px;
+    width: 50px;
+    padding-left: 15px;
+}
+
+/* session information */
+.session-info {
+    width: calc(100% - 180px);
+    height: 100%;
+}
+.info-header {
+    width: calc(100% - 10px);
+    height: 40px;
+    background: #f8f8f8;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: auto;
+    border-radius: 0px 10px 10px 0px;
+    padding-left: 10px;
+}
+.info-header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-header div img {
+    height: 15px;
+    width: 15px;
+}
+.head-item {
+    margin-left: 150px;
+}
+@media(max-width: 990px) {
+    .head-item {
+        margin-left: 20px;
+    }
+}
+
+.session-info p {
+    max-width: 90%;
+    padding-top: 10px;
+    line-height: 2;
+    padding-left: 10px;
+}
+@media(max-width: 580px) {
+    .session-info p {
+        max-width: 100%;
+    }
+}
+.info-header div p:last-child {
+    display: none;
+}
+.item p {
+    display: block;
+}
+@media(max-width: 990px) {
+    .session-info p {
+        max-width: 100%;
+        line-height: 1;
+    }
+}
+@media(max-width: 425px) {
+    .info-header div p:last-child {
+        display: block;
+    }  
+    .item p:nth-child(2) {
+        display: none;
     }
 }
