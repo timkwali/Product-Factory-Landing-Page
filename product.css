@@ -460,7 +460,6 @@ body {
         width: 95%;
     }
 }
-.exp
 .links > p {
     align-items: flex-start;
     max-width: 50%;
@@ -507,14 +506,20 @@ body {
 .session-container {
     margin-top: 100px;
 }
+@media(max-width: 991px) {
+    .session-container {
+        width: 100%;
+    }
+}
 .session {
     height: 200px;
     display: flex;
     justify-content: center;
 }
-@media(max-width: 990px) {
+@media(max-width: 991px) {
     .session {
         height: auto;
+        width: 100%
     }
 }
 @media(max-width: 575px) {
@@ -576,6 +581,11 @@ body {
     width: calc(100% - 180px);
     height: 100%;
 }
+@media(max-width: 991px) {
+    .session-info {
+        width: 95%;
+    }
+}
 .info-header {
     width: calc(100% - 10px);
     height: 40px;
@@ -595,6 +605,11 @@ body {
 .info-header div img {
     height: 15px;
     width: 15px;
+}
+@media(max-width: 991px) {
+    .info-header {
+        justify-content: space-between;
+    }
 }
 .head-item {
     margin-left: 150px;
@@ -638,7 +653,8 @@ body {
 }
 
 
-/* Masters */
+
+/* Masters section */
 .masters {
     color: black;
     background: #fff;
@@ -684,6 +700,7 @@ body {
 .name {
     font-weight: bold;
 }
+
 
 
 /* Frequently Asked Questions */
@@ -769,6 +786,22 @@ body {
     justify-content: center;
     width: auto;
 }
+@media(max-width: 424px) {
+    .fee-bg {
+        font-size: 70px;
+    }
+    .fee-header p {
+        transform: translateY(-10px);
+    }
+}
+@media(max-width: 374px) {
+    .fee-bg {
+        font-size: 60px;
+    }
+    .fee-header p {
+        transform: translateY(-30px);
+    }
+}
 
 /* Achievement */
 .achievement-message {
@@ -811,6 +844,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     color: rgba(0, 0, 0, 0.7);
 }
 
@@ -834,24 +868,14 @@ body {
     height: auto;
     margin-right: 30px;
 }
-@media(max-width: 768px) {
-    .big-envelope {
-        width: 70%;
-        display: flex;
-        justify-content: center;
-    }
-}
 .request {
-    margin: auto;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .form {
     margin-top: 50px;
-    margin-right: auto;
     width: 50%;
 }
 .form h3 {
@@ -866,22 +890,29 @@ body {
     align-items: center;
     background: rgba(255, 255, 255, 0.2)
 }
-@media(max-width: 768px) {
-    .form {
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-}
 .small-envelope {
+    width: 170px;
     margin-top: 50px;
-    margin-right: 150px;
+    margin-left: auto;
+    margin-right: 120px;
 }
 @media(max-width: 768px) {
+    .big-envelope {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
     .small-envelope {
         display: none;
     }
+    .form {
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+    }
 }
+
 
 
 /* Projects */
@@ -1019,9 +1050,9 @@ body {
         width: 100px;
     }
 }
-@media(max-width: 320px) {
+@media(max-width: 530px) {
     .start-end img {
-        width: 50px;
+        width: 270px;
     }
 }
 .start {
@@ -1040,6 +1071,11 @@ body {
         margin-left: 25px;
     }
 }
+@media(max-width: 530px) {
+    .start, .end {
+        display: none;
+    }
+}
 @media(max-width: 320px) {
     .start {
         margin-right: 10px;
@@ -1053,6 +1089,9 @@ body {
 .date-input {
     display: flex;
     justify-content: center;
+}
+.start-date-text, .end-date-text {
+    display: none;
 }
 .start-date, .end-date {
     display: flex;
@@ -1070,6 +1109,35 @@ body {
 }
 .end-date {
     margin-left: 50px;
+}
+@media(max-width: 530px) {
+    .date-input {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* start */
+    .start-date-text {
+        display: block;
+        text-align: center;
+        font-weight: bold;
+    }
+    .start-date {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* end */
+    .end-date-text {
+        display: block;
+        text-align: center;
+        font-weight: bold;
+    }
+    .end-date {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* Register */
@@ -1103,6 +1171,14 @@ body {
     margin-left: 20px;
     margin-top: 10px
 }
+@media(max-width: 530px) {
+    .register {
+        flex-direction: column;
+    }
+    .register p, .register button {
+        margin-top: 30px;
+    }
+}
 
 
 
@@ -1129,4 +1205,14 @@ body {
 }
 .contact p {
     font-size: 10px;
+}
+@media(max-width: 490px) {
+    .contact {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .contact * {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
