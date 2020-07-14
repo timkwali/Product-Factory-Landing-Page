@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     color: white;
+    font-family: "Arial Narrow";
 }
 
 .grid{
@@ -447,12 +448,12 @@ body {
 .links p:first-child {
     border-right: 1px solid black;
     border-left: 1px solid black;
-    border-radius : 5px 0px 0px 5px; 
+    border-radius : 15px 0px 0px 15px; 
 }
 .links p:last-child {
     border-right: 1px solid black;
     border-left: 1px solid black;
-    border-radius : 0px 5px 5px 0px; 
+    border-radius : 0px 15px 15px 0px; 
 }
 .exp-details {
     height: 200px;
@@ -650,6 +651,8 @@ body {
 }
 .item p {
     display: block;
+    padding-bottom: 8px;
+    
 }
 @media(max-width: 990px) {
     .session-info p {
@@ -665,6 +668,7 @@ body {
         display: none;
     }
 }
+
 
 
 
